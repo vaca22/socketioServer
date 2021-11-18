@@ -22,8 +22,8 @@ fun main(args:Array<String>){
 
 
     val books = Arrays.asList(27464, 747854)
-    val person: DBObject = BasicDBObject("_id", "jo")
-        .append("name", "Jo Bloggs")
+    val person: DBObject = BasicDBObject("_id", "j56o")
+        .append("name", "Jo jhgoggs")
         .append(
             "address", BasicDBObject("street", "123 Fake St")
                 .append("city", "Faketon")
