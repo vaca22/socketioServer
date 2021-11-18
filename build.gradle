@@ -12,6 +12,7 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.mongodb:mongo-java-driver:2.12.3'
     implementation 'org.slf4j:slf4j-simple:1.7.25'
     implementation "org.jetbrains.kotlin:kotlin-stdlib"
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
