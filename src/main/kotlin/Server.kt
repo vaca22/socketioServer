@@ -4,6 +4,7 @@ import com.mongodb.BasicDBObject
 import com.mongodb.DBObject
 import com.mongodb.MongoClient
 import com.mongodb.MongoClientURI
+import sun.rmi.runtime.Log
 import java.util.*
 
 
@@ -35,5 +36,11 @@ fun main(args:Array<String>){
 
     val database = mongoClient.getDB("Examples");
     val collection = database.getCollection("people");
-    collection.insert(person);
+//    collection.insert(person);
+
+
+    val query: DBObject = BasicDBObject("_id", "jo")
+    val cursor = collection.find(query)
+    val name=cursor.one()["name"] as String
+    println("sdfsdf  "+name)
 }
